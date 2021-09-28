@@ -4,4 +4,4 @@
 num1 = int(2)
 num2 = int(2)
 
-print("Ergebnis:", num1 + num2)
+print("result:", num1 + num2)
