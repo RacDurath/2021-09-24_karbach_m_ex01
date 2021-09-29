@@ -1,7 +1,26 @@
-# 2021-09-28_Addition
+# 2021-09-24_ex01
+# Marcel Karbach, 4000031
+# Course: Applications of Accelerators
+
 # Warmup computational exersize: Write a function in Python code that adds 2+2 and returns the result.
 
-num1 = int(2)
-num2 = int(2)
+num1 = int(2)                                 # number 1
+num2 = int(2)                                 # number 2
 
-print("result:", num1 + num2)
+print("result:", num1 + num2)                 # shows result of addition of number 1 and 2
+
+
+# Write a function in Python code that multiples two 3x3 Matrices (ndarray) and returns the result.
+
+import numpy as np                             
+
+def matrix_multiplication(m1, m2):             # function, named 'matrix_multiplication' with arguments 'm1' & 'm2' 
+    m1 = np.array(a)                           # m1 defined as an array of a
+    m2 = np.array(b)                           # m2 defined as an array of b
+    result = np.dot(m1, m2)                    # performing the matrix multiplication of m1 and m2
+    return result                              # returns the result
+
+a = [1, 2, 3], [4, 5, 6], [7, 8, 9]            # definition of a
+b = [1, 2, 3], [4, 5, 6], [7, 8, 9]            # definition of b
+
+print("result:", matrix_multiplication(a, b))  # shows result ofmultiplication of matirces a and b
